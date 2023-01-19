@@ -5,7 +5,9 @@ fn main() {
 
         let v: Vec<i32> = Vec::new();
 
-        let v = vec![1, 2, 3];
+        let mut v = vec![1, 5, 3, 2, 4];
+        v.sort_by(|x, y| x.cmp(&y));
+        println!("{:?}", v);
     }
     {
         // UPDATE
